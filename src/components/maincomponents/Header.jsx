@@ -45,7 +45,7 @@ const Header = () => {
       >
         <a
           aria-label="WindUI logo"
-          className="flex items-center gap-2 whitespace-nowrap p-6 text-xl text-slate-800 font-medium focus:outline-none"
+          className="flex items-center gap-2 whitespace-nowrap p-6 text-xl font-medium focus:outline-none"
           href="javascript:void(0)"
         >
           <svg
@@ -174,14 +174,17 @@ const Header = () => {
                   <div className="flex w-full flex-1 flex-col items-start justify-center gap-0 overflow-hidden truncate text-sm">
                     Fechas
                   </div>
-                  
+                  <span className="inline-flex items-center justify-center rounded-full bg-red-100 px-2 text-xs text-red-500 ">
+                    {13}
+                    <span className="sr-only"> new notifications</span>
+                  </span>
                 </a>
               </li>
             </ul>
           </div>
         </nav>
-        <footer className="border-t border-slate-200  p-3">
-          <p className="flex items-center gap-3 rounded p-3 text-red-600 transition-colors text-red-500 ">
+        <footer className="border-t border-slate-200 p-3">
+          <p className="flex items-center gap-3 rounded p-3 text-slate-900 transition-colors text-red-500 ">
             <div className="flex items-center self-center ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -200,7 +203,7 @@ const Header = () => {
                 />
               </svg>
             </div>
-            <div className="flex w-full flex-1 text-red-500 flex-col items-start justify-center gap-0 overflow-hidden truncate text-sm font-medium">
+            <div className="flex w-full flex-1 flex-col items-start justify-center gap-0 overflow-hidden truncate text-sm font-medium">
               18 de Febrero
             </div>
           </p>

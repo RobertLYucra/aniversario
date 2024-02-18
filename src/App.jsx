@@ -12,7 +12,7 @@ function App() {
       <div className="main mt-12">
         <Routes>
           <Route path="/" element={<Inicio />} />
-          <Route path="/recuerdos" element={<Recuerdos />} />
+          <Route path="/recuerdos" element={<Recuerdos/>} />
           <Route path="/fechas" element={<Fechas />} />
         </Routes>
       </div>
